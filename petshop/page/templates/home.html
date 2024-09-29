@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
+
+    <title>Welcome</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #03002C;
+            color: #F2E8C6;
+        }
+
+        p {
+            font-size: xx-large;
+            font-family: "Playwrite DE Grund", cursive;
+            text-align: center;
+        }
+
+        a {
+            color: #F5841A;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <p>
+            Hi admin, Welcome to server! <br>
+            go to <a href="{% url 'admin:index' %}">admin panel</a>
+        </p>
+    </div>
+</body>
+
+</html>
